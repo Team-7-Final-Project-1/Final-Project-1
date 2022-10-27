@@ -44,6 +44,24 @@ nav ul li a:hover::after{
 }
 
 
+/* Stories & News */
+.linkcard {
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: none;
+}
+
+.linkcard:hover {
+  transition: 0.7s;
+  color: #0273e6;
+  text-decoration: underline;
+}
+
+#todos {
+  color: #0273e6;
+  font-weight: bold;
+
+}
 
 /* FOOTER  */
 
