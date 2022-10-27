@@ -234,7 +234,22 @@ nav ul li a:hover::after{
   {
     margin-bottom:30px
   }
+    .kotak2{
+    display: flex;
+    flex-direction: column;
+    }
+  .conten{
+    width: 100%;
+    }
+}  
+@media (max-width: 576px)
+{
+    .kotak2 .conten .card{
+        width: 80%;
+    }
 }
+    
+
 @media (max-width:767px)
 {
   .site-footer
