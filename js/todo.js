@@ -1,4 +1,4 @@
-// Makes sure animations has ended required for animate.css
+// Animations
 $.fn.extend({
   animateCss: function (animationName, callback) {
     var animationEnd = (function (el) {
@@ -58,7 +58,7 @@ if (Storage) {
     }
   }
 }
-// Get's current date and display's it to the user
+// DISPLAY DATE
 let date = new Date();
 let day = $("#day").text(
   [
@@ -90,10 +90,10 @@ let month = $("#month").text(
 );
 let currentYear = $("#year").text(date.getFullYear());
 
-// Get's the current time
+// TIME
 let hours = date.getHours();
 
-// Set's the background according to the time of day
+// Background Sesuai Waktu
 if (hours < 6 || hours > 19) {
   if (!$(".bodyhead").hasClass("nightbg")) $(".bodyhead").addClass("nightbg");
   if ($(".bodyhead").hasClass("daybg")) $(".bodyhead").removeClass("daybg");
@@ -106,7 +106,7 @@ $("#listinput").keyup(function (event) {
     $("#additembtn").click();
   }
 });
-// Disable the add button if input isn't focused
+// Disable add button input tidak focus
 $(document).ready(function (e) {
   $("#additembtn").prop("disabled", true);
   $("#listinput").keyup(function () {
@@ -117,7 +117,7 @@ $(document).ready(function (e) {
     );
   });
 
-  // adds items to the list
+  // adds items list
   $("#additembtn").click(function (e) {
     let inputValue = $("#listinput").val();
 
@@ -161,7 +161,7 @@ $(document).ready(function (e) {
   });
 });
 
-// Removes items on the list
+// Removes items list
 $(document).on("click", ".delbtn", function () {
   let self = this;
   $(self)
@@ -173,7 +173,7 @@ $(document).on("click", ".delbtn", function () {
     });
 });
 
-// Marks the list item done
+// Marks list item done
 $(document).on("click", ".donebtn", function () {
   let self = this;
   if ($(self).parent().children(".items").hasClass("completedtask")) {
@@ -192,7 +192,7 @@ $(document).on("click", ".donebtn", function () {
 });
 
 /**
- * Checks if a storage item has expired and should be deleted.
+ * Check jika storage item has expired .
  * @param {uinteger} lastUpdated
  * @param {uinteger} expiration
  */
@@ -201,21 +201,21 @@ function isStorageItemExpired(lastUpdated, expiration = 7) {
 }
 
 /**
- * Get amount of seconds from a number of days
+ * Get seconds number of days
  */
 function secondsInDays(days) {
   return 60 * 60 * 24 * days;
 }
 
 /**
- * Gets the current unix timestamp
+ *  current unix timestamp
  */
 function getUnixTime() {
   return Math.floor(Date.now() / 1000);
 }
 
 /**
- * Toggles the completed status of the storage item.
+ * Toggles  completed status storage item.
  * @param {string} taskText
  */
 function storageToggleStatus(taskText) {
@@ -241,7 +241,7 @@ function storageToggleStatus(taskText) {
 }
 
 /**
- * Deletes the storage item by its task text.
+ * Deletes storage item
  * @param {string} taskText
  */
 function storageItemDelete(taskText) {

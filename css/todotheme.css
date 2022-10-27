@@ -1,5 +1,3 @@
-/* Boilerplate */
-
 html,
 body {
     height: 100%;
@@ -9,9 +7,7 @@ body {
     box-sizing: border-box
 }
 
-/* Boilerplate End */
 
-/* Global Veriables  CSS*/
 
 .donebtncomplete {
     color: green !important;
@@ -41,7 +37,7 @@ body {
     --secondary-border-color: #ccc;
 }
 
-/* Global Veriables End*/
+
 
 /* Containers */
 
@@ -74,7 +70,7 @@ body {
 
 /* Containers End */
 
-/* Header Of Todo App */
+/* Header Todo App */
 .bodyhead {
     background-color: #fff;
     width: 100%;
@@ -133,7 +129,7 @@ label {
     display: none;
 }
 
-/* Header Of Todo App End*/
+/* Header Todo App End*/
 
 /* Body */
 
@@ -262,7 +258,7 @@ a {
 }
 /* Footer End  */
 
-/* Media Query For Phones */
+/* Media Phones */
 
 @media only screen and (max-width: 500px) {
     .app_container {
@@ -307,11 +303,11 @@ a {
     }
 }
 
-/* Media Query For Phones End */
+/* Media Phones End */
 
 /* List Animations */
 
-/* Webkit Scrollbar Material */
+/* Webkit Scrollbar */
 
 ::-webkit-scrollbar {
     background-color: var(--white-text-color);
