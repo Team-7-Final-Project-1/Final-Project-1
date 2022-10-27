@@ -37,10 +37,10 @@ if (Storage) {
       }
 
       let newItem = `<li class=\"todoitems\">
-				<button class=\"donebtn\">
-					<i class=\"fas fa-check fa-lg\"></i>
-				</button>\
-				<span class="items`;
+				  <button class=\"donebtn\">
+					  <i class=\"fas fa-check fa-lg\"></i>
+				  </button>\
+				  <span class="items`;
       if (items[c].finished === true) {
         newItem += ' completedtask" contenteditable="false">';
       } else {
@@ -49,10 +49,10 @@ if (Storage) {
       newItem +=
         items[c].task +
         `</span>
-				<button class="delbtn">\
-					<i class="fas fa-times fa-lg"></i>\
-				</button>\
-			</li>`;
+				  <button class="delbtn">\
+					  <i class="fas fa-times fa-lg"></i>\
+				  </button>\
+			  </li>`;
 
       $(".ullist").prepend(newItem);
     }
@@ -140,18 +140,18 @@ $(document).ready(function (e) {
 
     $(".ullist").prepend(
       '\
-			<li class="todoitems">\
-				<button class="donebtn">\
-				<i class="fas fa-check fa-lg"></i>\
-				</button>\
-				<span class="items" contenteditable="true">' +
+			  <li class="todoitems">\
+				  <button class="donebtn">\
+				  <i class="fas fa-check fa-lg"></i>\
+				  </button>\
+				  <span class="items" contenteditable="true">' +
         $("#listinput").val() +
         '</span>\
-				<button class="delbtn">\
-				<i class="fas fa-times fa-lg"></i>\
-				</button>\
-			</li>\
-		'
+				  <button class="delbtn">\
+				  <i class="fas fa-times fa-lg"></i>\
+				  </button>\
+			  </li>\
+		  '
     );
 
     $("li:first").animateCss("fadeInDown");
@@ -258,3 +258,4 @@ function storageItemDelete(taskText) {
 
   localStorage.setItem("listitems", JSON.stringify(newItems));
 }
+  

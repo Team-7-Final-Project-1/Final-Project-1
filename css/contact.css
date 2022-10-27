@@ -369,4 +369,31 @@ nav ul li a:hover::after {
 }
 
 
+
 /* FOOTER  */
+@media(max-width:991px) {
+  .contact {
+    padding: 50px;
+  }
+
+  .containerx {
+    flex-direction: column;
+  }
+
+  .containerx .contactinfo {
+    margin-bottom: 40px;
+  }
+
+  .containerx .contactinfo,
+  .contactform {
+    width: 100%;
+  }
+
+}
+
+
+
+nav ul.slide {
+  opacity: 1;
+  transform: translateX(0);
+}
