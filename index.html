@@ -13,6 +13,7 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+  
 
     <!-- My CSS -->
     <link rel="stylesheet" href="css/index.css" />
@@ -23,15 +24,24 @@
   </head>
   <body>
 
+    
+
     <!--  START NAVBAR  -->
+    
     <nav
       class="navbar navbar-expand-lg shadow-sm p-1 bg-body sticky-md-top "
       style="margin-bottom: 1px"
     >
+
+    
       <div class="container">
         <a class="navbar-brand" href="index.html"><b><i>HOS</i></b>&nbsp;
           <img src="images/logo.png" alt="Bootstrap" width="55" height="55"/>
          <b><i>TING</i></b> </a>
+
+
+
+         
         <button
           class="navbar-toggler"
           type="button"
@@ -63,15 +73,19 @@
             <li class="nav-item">
               <a class="nav-link " href="todos.html">TODOS</span></a>
             </li>
+            
           </ul>
         </div>
       </div>
     </nav>
+ 
     <!--  END NAVBAR  -->
 
     <!-- START CAROUSEL -->
     <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="true">
+      
       <div class="carousel-indicators">
+        
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -98,6 +112,90 @@
     </div></div>
     <!-- END CAROUSEL -->
 
+<!-- MODAL  -->
+
+<div class="container text-center">
+  <div class="row mt-3  ">
+    <div class="col">
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary mt3 mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop" 
+style="width: 200px;
+height: 60px;
+">
+ <b> DAPATKAN HARGA PROMO !!!</b>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <table class="customTable">
+          <thead>
+            <tr>
+              <th>Plan Features
+              </th>
+              <th>Basic<br>
+                $5/month</th>
+              <th>Economy<br>
+                $9/month</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Web Space	</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>Bandwith</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>24/7 Support</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Dedicated IP</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Wordpress Suppport</td>
+              <td>X</td>
+              <td>✓</td>
+            </tr>
+           
+            
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    
+    
+  </div>
+</div>
+
+<!-- MODAL  -->
+    
     <!-- Start About -->
     <div class="container-fluid text-center" style="background-color: #f0f0f0;">
       <div class="container">
@@ -342,6 +440,31 @@
         </div>
   </footer>
 
+  <!-- POP UP -->
+
+  <section class="modal container">
+    <button class="modal__button" id="open-modal">Open Modal</button>
+
+    <div class="modal__container" id="modal-container">
+      <div class="modal__content">
+        <div class="modal__close close-modal" title="Close">
+          <i class="bx bx-x"></i>
+        </div>
+
+        <img src="assets/img/star-trophy.png" alt="" class="modal__img" />
+
+        <h1 class="modal__title">Good Job!</h1>
+        <p class="modal__description">Click the button to close</p>
+
+        <button class="modal__button modal__button-width">View status</button>
+
+        <button class="modal__button-link close-modal">Close</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- POP UP -->
+
   <!-- END FOOTER -->
     
     <script
@@ -351,5 +474,6 @@
 
       
     ></script>
+  
   </body>
 </html>
